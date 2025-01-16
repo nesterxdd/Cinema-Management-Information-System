@@ -1,0 +1,58 @@
+/* src/components/high level/create_report_section/SelectShowtimeReport.scss */
+@import "../../../variables.scss";
+.select-showtime-report-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      color: $base-black-color;
+    }
+  
+    .showtime-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 1rem; // Add spacing between rows for a clean look
+  
+      th, td {
+        padding: 1.2rem;
+        text-align: left;
+        border-radius: 8px;  // Rounded corners
+        color: $base-black-color;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+  
+      th {
+        background-color: $base-active-color;
+        color: $base-white-color-0;
+        font-weight: 500;
+      }
+  
+      td {
+        background-color: $base-white-color-100;
+      }
+  
+      tr {
+        &:hover {
+          background-color: $base-active-color-100;
+          transform: translateY(-2px); // Add a slight lift effect for hover
+          transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+      }
+  
+      // Highlight the selected row with a different color
+      .selected {
+        background-color: $base-active-color;
+        color: $base-white-color-0;
+        transform: scale(1.05); // Add a slight zoom effect when selected
+        transition: transform 0.2s ease;
+      }
+    }
+  }
+  
+  

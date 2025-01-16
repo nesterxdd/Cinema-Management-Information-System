@@ -1,0 +1,96 @@
+@import "../../../variables.scss";
+
+.manage-permissions-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    background-color: $base-white-color;
+  }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+
+    .permissions-dropdown {
+        background-color: $base-white-color-100;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 2, 0, 0.1); // Using a slight opacity for shadow
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+        .dropdown-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+            color: $base-active-color;
+            cursor: pointer;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid $base-active-color;
+            margin-bottom: 1rem;
+            font-weight: bold;
+
+            span {
+                transition: transform 0.3s;
+                transform: rotate(0);
+            }
+        }
+
+        .permissions-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            padding: 1rem 0;
+
+            .permission-item {
+                display: flex;
+                align-items: center;
+                background-color: $base-white-color-0;
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0, 2, 0, 0.1);
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: $base-active-color-100;
+                }
+
+                label {
+                    margin-left: 0.5rem;
+                    font-size: 1rem;
+                    color: $base-black-color;
+                }
+
+                input[type="checkbox"] {
+                    width: 18px;
+                    height: 18px;
+                    accent-color: $base-active-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .save-button {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        background-color: $base-active-color;
+        color: $base-white-color-0;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 2, 0, 0.15);
+
+        &:hover {
+            background-color: $base-active-color-100;
+            box-shadow: 0 6px 12px rgba(0, 2, 0, 0.2);
+        }
+    }

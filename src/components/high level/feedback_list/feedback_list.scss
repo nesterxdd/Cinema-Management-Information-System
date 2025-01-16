@@ -1,0 +1,68 @@
+@import "../../../variables.scss"; 
+
+.feedback-list-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 85px;
+}
+
+.page-title {
+  text-align: left;
+}
+
+.page-title h1 {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: -5px;
+  color: $base-black-color;
+}
+
+.feedbacks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: $base-white-color-100;
+}
+
+.feedbacks-table th,
+.feedbacks-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid $base-black-color; 
+}
+
+.feedbacks-table th {
+  background-color: $base-white-color-0; 
+  color: $base-black-color; 
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem; 
+}
+
+.feedbacks-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.feedbacks-table tbody tr:nth-child(even) {
+  background-color: $base-white-color-100; 
+}
+
+.feedbacks-table tbody tr:hover {
+  background-color: $base-active-color-100;
+  transform: translateY(-2px); 
+}
+
+.feedbacks-table tbody tr td {
+  color: $base-black-color; 
+}
+
+.feedbacks-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}

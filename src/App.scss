@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.App {
+  background-color: $base-white-color;
+  min-height: 100vh;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 85px;
+
+  .section-header {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,101 @@
+@import "../variables.scss";
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(49, 45, 44, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: $base-white-color;
+  padding: 4rem 3rem;
+  border-radius: 10px;
+  border: 2px solid $base-black-color;
+  max-width: 500px;
+  width: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 110;
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .link {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &#ticket-purchase {
+    width: 60%;
+  }
+
+  .header {
+    font-size: 2rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+
+  form {
+    margin: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    input {
+      padding: 10px 15px;
+      border-radius: 16px;
+      border: 1px solid #6f6f6f;
+      background: transparent;
+      width: calc(100% - 2rem);
+    }
+  }
+
+  .footer {
+    border-top: 1px solid $base-black-color;
+    padding-top: 1rem;
+  }
+}
+
+.purchase-wrapper {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+  }
+}
+
+#ticket-purchase .actions .text {
+  font-size: 1.5rem;
+}

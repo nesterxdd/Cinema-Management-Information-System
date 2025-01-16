@@ -1,0 +1,46 @@
+@import "../../../variables.scss";
+.select-movie-report {
+    padding: 20px;
+    margin-top: 40px;
+  
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+  
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  
+    tr:hover {
+      background-color: $base-active-color-100; 
+    }
+  
+    .select-button {
+      background-color: $base-active-color;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+  

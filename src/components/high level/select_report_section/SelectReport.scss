@@ -1,0 +1,171 @@
+@import "../../../variables.scss"; 
+
+.select-report-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 85px;
+}
+
+.page-title {
+  text-align: left;
+}
+
+.page-title h1 {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: -5px;
+  color: $base-black-color; /* Title text color */
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the table */
+  border-radius: 8px; /* Rounded corners for the table */
+  overflow: hidden;
+  background-color: $base-white-color-100; /* Table background */
+}
+
+.reports-table th,
+.reports-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid $base-black-color; /* Using base-black-color for separation */
+}
+
+.reports-table th {
+  background-color: $base-white-color-0; /* Light background for header */
+  color: $base-black-color; /* Dark text for contrast */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem; /* Slightly larger font for header */
+}
+
+.reports-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.reports-table tbody tr:nth-child(even) {
+  background-color: $base-white-color-100; /* Light background for even rows */
+}
+
+.reports-table tbody tr:hover {
+  background-color: $base-active-color-100; /* Highlight on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.reports-table tbody tr td {
+  color: $base-black-color; /* Softer text color for data rows */
+}
+
+.report-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .report-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $base-black-color; /* Using base-black-color variable */
+  }
+
+  .report-description {
+    font-size: 1.2rem;
+    color: $base-black-color; /* Using base-black-color variable */
+  }
+}
+
+.report-table-wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid $base-black-color;
+  }
+
+  th {
+    background-color: $base-active-color; /* Use active color for header background */
+    color: $base-white-color-0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+
+  td {
+    background-color: $base-white-color-0;
+    color: $base-black-color;
+    font-size: 1rem;
+  }
+
+  // Alternate row colors
+  tr:nth-child(even) td {
+    background-color: $base-white-color-100;
+  }
+
+  // Hover effect for rows
+  tr:hover td {
+    background-color: $base-active-color-100;
+    color: $base-black-color;
+  }
+}
+
+.report-summary {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+  .section-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $base-black-color;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: normal;
+  }
+
+  .summary-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .export-btn {
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .export-btn:hover {
+    background-color: #45a049;
+  }
+  
+}

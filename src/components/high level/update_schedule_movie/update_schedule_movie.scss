@@ -1,0 +1,47 @@
+@import "../../../variables.scss";
+
+.update-schedule-movie {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: $base-white-color;
+    border-radius: 8px;
+  }
+  
+  .movie-details {
+    margin-bottom: 20px;
+  }
+  
+  .movie-details p {
+    font-size: 1.2rem;
+    color: $base-gray-color;
+  }
+  
+  .date-picker, .time-picker {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: $base-black-color;
+  }
+  
+  input[type="date"],
+  input[type="time"] {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid $base-white-color;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  input[type="date"]:focus,
+  input[type="time"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .save-button {
+    margin-top: 20px;
+  }
+  

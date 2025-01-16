@@ -1,0 +1,42 @@
+@import "../../../variables.scss";
+
+.footer {
+  border-top: 2px solid $base-black-color;
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-description {
+    border-bottom: 2px solid $base-black-color;
+    width: 75%;
+
+    p {
+      padding: 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      letter-spacing: -1px;
+      border-right: 2px solid $base-black-color;
+    }
+
+    .footer-disclaimer {
+      border-top: 2px solid $base-black-color;
+    }
+  }
+
+  &-team {
+    padding: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: -1px;
+
+    .footer-header {
+      font-family: monospace;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

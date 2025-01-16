@@ -1,0 +1,105 @@
+@import "../../../variables.scss"; /* Import variables for reuse */
+
+/* User list page styles */
+.user-list-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes up at least full height */
+  padding: 0;
+  margin: 0;
+}
+
+/* The header should span the entire width */
+header {
+  width: 100%;
+}
+
+/* Main content area styles */
+main {
+  flex-grow: 1; /* Make sure main content stretches between header and footer */
+  padding: 2rem;
+  background-color: $base-white-color-0;
+  color: $base-black-color;
+}
+
+/* Title for the user management page */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $base-black-color;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Wrapper for the table to center it */
+.user-table-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: $base-white-color-100;
+
+  th,
+  td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid $base-active-color-100;
+    font-size: 1rem;
+  }
+
+  th {
+    background-color: $base-active-color;
+    color: $base-white-color-0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  tr:nth-child(even) {
+    background-color: $base-white-color-100;
+  }
+
+  tr:hover {
+    background-color: $base-active-color-100;
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+  }
+
+  td {
+    color: $base-black-color;
+  }
+
+  /* Adding rounded corners for the table */
+  border-radius: 8px;
+}
+
+/* Button styling inside the actions column */
+button {
+  padding: 0.6rem 1rem;
+  background-color: $base-active-color;
+  color: $base-white-color-0;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+
+  &:hover {
+    background-color: $base-active-color-100;
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+  }
+}
+
+/* Footer should also span the entire width */
+footer {
+  width: 100%;
+}

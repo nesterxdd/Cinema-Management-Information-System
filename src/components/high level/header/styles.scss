@@ -1,0 +1,28 @@
+@import "../../../variables.scss";
+
+.App-header {
+  padding: 0 40px 0 10px;
+  height: 85px;
+  border-bottom: 2px solid $base-black-color;
+  position: fixed;
+  width: calc(100% - 50px);
+  background-color: $base-white-color;
+  top: 0;
+  z-index: 10;
+
+  .logo {
+    height: 80px;
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

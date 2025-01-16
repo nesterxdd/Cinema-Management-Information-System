@@ -1,0 +1,52 @@
+@import "../../../variables.scss";
+
+.cinema-form-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: $base-white-color;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: $base-black-color;
+}
+
+.cinema-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: $base-gray-color;
+}
+
+input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid $base-white-color;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
